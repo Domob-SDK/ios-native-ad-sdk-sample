@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="PicAndTextTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wYM-38-Q8h">
+                        <rect key="frame" x="25" y="8" width="128" height="106"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="128" id="5VZ-js-DvE"/>
+                            <constraint firstAttribute="height" constant="106" id="EOM-fR-QYq"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XRS-Ye-lfe">
+                        <rect key="frame" x="161" y="15" width="245" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="weweweweweweweweweweww" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fJG-pI-ufi">
+                        <rect key="frame" x="161" y="44" width="245" height="51"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.33498677248677244" green="0.33498677248677244" blue="0.33498677248677244" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2014-12-12" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z8I-kp-ghi">
+                        <rect key="frame" x="314" y="97" width="92" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.87702546296296302" green="0.46874622948558492" blue="0.31240882602387782" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="XRS-Ye-lfe" firstAttribute="leading" secondItem="wYM-38-Q8h" secondAttribute="trailing" constant="8" id="7JU-MG-4Tj"/>
+                    <constraint firstItem="wYM-38-Q8h" firstAttribute="top" relation="lessThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="JZa-U1-56u"/>
+                    <constraint firstAttribute="bottomMargin" relation="lessThanOrEqual" secondItem="wYM-38-Q8h" secondAttribute="bottom" constant="10" id="Q2m-5J-hBI"/>
+                    <constraint firstAttribute="centerY" secondItem="wYM-38-Q8h" secondAttribute="centerY" id="bO4-tu-F0c"/>
+                    <constraint firstItem="wYM-38-Q8h" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="17" id="fC5-9X-nRs"/>
+                    <constraint firstItem="XRS-Ye-lfe" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="6" id="o4t-QC-QV3"/>
+                    <constraint firstItem="XRS-Ye-lfe" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="t5t-Os-Oth"/>
+                    <constraint firstItem="wYM-38-Q8h" firstAttribute="leading" relation="lessThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="y4O-ca-jWU"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="JZa-U1-56u"/>
+                        <exclude reference="Q2m-5J-hBI"/>
+                        <exclude reference="y4O-ca-jWU"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="dateString" destination="Z8I-kp-ghi" id="teq-SE-cKx"/>
+                <outlet property="descriptionInfo" destination="fJG-pI-ufi" id="NCI-42-BWJ"/>
+                <outlet property="icon" destination="wYM-38-Q8h" id="0Yb-n8-8B8"/>
+                <outlet property="title" destination="XRS-Ye-lfe" id="Bvj-ju-An0"/>
+            </connections>
+            <point key="canvasLocation" x="473" y="271"/>
+        </tableViewCell>
+        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="4nk-iW-NIG">
+            <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <point key="canvasLocation" x="610" y="317"/>
+        </imageView>
+    </objects>
+</document>
